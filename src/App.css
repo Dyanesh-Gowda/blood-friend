@@ -1,0 +1,195 @@
+/* General Styles for Footer */
+.footer {
+  background-color: #343a40; /* Match the header background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 250px); /* Account for sidebar width */
+  left: 250px; /* Align with the right edge of the sidebar */
+  box-sizing: border-box; /* Include padding and borders in width */
+}
+
+/* Sidebar Styling */
+/* Sidebar.css */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2c3e50;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-item {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #34495e;
+}
+
+.sidebar-item svg {
+  margin-right: 10px;
+}
+
+/* Container for the content with border (if needed) */
+.contu {
+  border: 3px solid aqua;
+  width: 600px;
+  height: 300px;
+  margin: 300px auto; /* Center the container horizontally */
+  padding: 100px 0;
+  border-radius: 5px;
+}
+
+/* Login Container Styling */
+.login-container {
+  background-image: url('images/blood2.jpg'); /* Use forward slashes */
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh; /* Ensure it's at least as tall as the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Login Form Styling */
+.login-form {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General Styles for Header */
+.header {
+  background-color: #343a40; /* Dark background color for the header */
+  padding: 20px 0; /* Add padding for better spacing */
+  position: relative;
+  width: calc(100% - 250px); /* Account for sidebar width */
+  left: 250px; /* Align with the right edge of the sidebar */
+  top: 0;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.title {
+  color: #dc3545; /* Red color for the title */
+  font-size: 3rem; /* Font size for the title */
+  font-weight: bold; /* Bold font weight */
+}
+
+.lead {
+  background-color: #e0e0e0; /* Background color for the tagline */
+  color: #000; /* Text color for the tagline */
+  padding: 10px; /* Add padding to the tagline */
+  border-radius: 4px; /* Rounded corners for background */
+}
+
+/* Main content area */
+.app-container {
+  display: flex; /* Flexbox layout to accommodate sidebar and main content */
+  margin-left: 250px; /* Offset for the sidebar width */
+  padding: 20px; /* Add padding for spacing */
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+}
+
+.main-content {
+  flex-grow: 1; /* Allow main content to take remaining space */
+  padding-bottom: 70px; /* Space for the footer */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Createl Component Styles */
+.createl-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.image-section {
+  display: flex;
+  justify-content: space-around; /* Space between sections */
+  flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 40px; /* Space between sections */
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Space between title and image */
+}
+
+.createl-image {
+  width: 100%;
+  height: 350px; /* Fixed height for the image containers */
+  max-width: 350px; /* Adjust based on your design */
+  border: 2px solid #ddd; /* Optional border */
+  border-radius: 5px; /* Optional border radius */
+  margin-bottom: 20px; /* Space between image and button */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+}
+
+.hospital-image {
+  background-image: url('images/1712077209890.jpg'); /* Correct path to the image */
+}
+
+.users-image {
+  background-image: url('images/1712077209875.jpg'); /* Correct path to the image */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Bootstrap primary button color */
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn-secondary {
+  background-color: #6c757d; /* Secondary button color */
+  border: none;
+  color: white;
+  font-size: 19px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.btn-hover {
+  background-color: #495057 !important;
+  border-color: #495057 !important;
+  transition: background-color 0.3s ease;
+}
+
+.btn-hover:hover {
+  background-color: #343a40 !important;
+  border-color: #343a40 !important;
+  color: #f8f9fa !important;
+}
+.usersE{
+  color: #dc3545;
+  font-size: 25px;
+}
