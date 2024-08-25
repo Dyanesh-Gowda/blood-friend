@@ -82,7 +82,7 @@ const Contact = () => {
             </div>
             <div className="mb-3">
               <label htmlFor="message" className="form-label">
-                <i class="bi bi-chat-right"></i> Message
+                <i className="bi bi-chat-right"></i> Message
               </label>
               <textarea
                 className="form-control"

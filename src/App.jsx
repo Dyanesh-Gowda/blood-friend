@@ -8,8 +8,7 @@ import {
 import HeaderComp from "./components/HeaderComp";
 import FooterComp from "./components/FooterComp";
 import LoginPage from "./components/LoginPage";
-import UserPage from "./components/UserPage";
-import HospitalPage from "./components/HospitalPage";
+
 import Createl from "./components/Createl";
 import UserComponent from "./components/UserComponent";
 import HospitalComponent from "./components/HospitalComponent";
@@ -39,32 +38,10 @@ const App = () => {
         <div className="main-content flex-grow-1 p-3">
           <Routes>
             <Route path="/" element={<LoginPage />} />
-            <Route
-              path="/user"
-              element={isAuthenticated() ? <UserPage /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/hospital"
-              element={
-                isAuthenticated() ? <HospitalPage /> : <Navigate to="/" />
-              }
-            />
-            <Route
-              path="/create-user"
-              element={isAuthenticated() ? <Createl /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/user-form"
-              element={
-                isAuthenticated() ? <UserComponent /> : <Navigate to="/" />
-              }
-            />
-            <Route
-              path="/hosp-form"
-              element={
-                isAuthenticated() ? <HospitalComponent /> : <Navigate to="/" />
-              }
-            />
+
+            <Route path="/create-user" element={<Createl />} />
+            <Route path="/user-form" element={<UserComponent />} />
+            <Route path="/hosp-form" element={<HospitalComponent />} />
             <Route
               path="/users-list"
               element={
@@ -77,25 +54,10 @@ const App = () => {
                 isAuthenticated() ? <HospListComponent /> : <Navigate to="/" />
               }
             />
-            <Route
-              path="/user/:userId"
-              element={
-                isAuthenticated() ? (
-                  <UserDetailsComponent />
-                ) : (
-                  <Navigate to="/" />
-                )
-              }
-            />
+            <Route path="/user/:userId" element={<UserDetailsComponent />} />
             <Route
               path="/hospital/:hospitalId"
-              element={
-                isAuthenticated() ? (
-                  <HospDetailsComponent />
-                ) : (
-                  <Navigate to="/" />
-                )
-              }
+              element={<HospDetailsComponent />}
             />
             <Route
               path="/about"

@@ -50,6 +50,7 @@ const UserDetailsComponent = () => {
       address,
       phno,
       bloodGroup,
+      email,
       password: showPasswordFields ? password : user.password,
     };
 
@@ -132,6 +133,7 @@ const UserDetailsComponent = () => {
                 type="email"
                 value={email}
                 className="form-control bg-light"
+                onChange={(e) => setEmail(e.target.value)}
                 readOnly
               />
             </div>

@@ -63,6 +63,7 @@ const HospDetailsComponent = () => {
       address,
       phno,
       bloodTypes,
+      email,
       password: showPasswordFields ? password : hospital.password, // Use existing password if not updated
     };
 
@@ -135,6 +136,7 @@ const HospDetailsComponent = () => {
                   type="email"
                   value={email}
                   className="form-control bg-light"
+                  onChange={(e) => setEmail(e.target.value)}
                   readOnly
                 />
               </div>
